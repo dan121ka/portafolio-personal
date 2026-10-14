@@ -7,6 +7,7 @@
 - **Ciudad / País:** Cochabamba, Bolivia
 - **Teléfono / WhatsApp:** +591 69433231
 - **Correo Electrónico:** somoseldia27@gmail.com
+- **Repositorio Oficial en GitHub:** [https://github.com/dan121ka/portafolio-personal](https://github.com/dan121ka/portafolio-personal)
 
 ---
 
@@ -14,27 +15,30 @@
 
 | # | Entregable | Estado | Ubicación en el Proyecto |
 |---|------------|--------|--------------------------|
-| **1** | **Agente md** | Completado | Archivo `AGENTE.md` en la raíz del proyecto con la especificación técnica, prompts y arquitectura. |
+| **1** | **Agente md** | Completado | Archivo `AGENTE.md` en la raíz del proyecto con la especificación técnica, prompts, arquitectura y enlace al repositorio. |
 | **2** | **Template de referencia iPortfolio** | Completado | Referencia arquitectónica basada en [iPortfolio](https://builder.bootstrapmade.com/demo/iPortfolio/). Template base guardado en `template-referencia.html`. |
-| **3** | **Imágenes personales** | Completado | Fotografía real del estudiante Alan Daniel Canaviri Conde integrada en `public/assets/img/my-profile-img.jpg` y `public/assets/img/alan.png`. |
+| **3** | **Imágenes personales** | Completado | Fotografía real del estudiante Alan Daniel Canaviri Conde integrada en `public/assets/img/my-profile-img.jpg` y `public/assets/img/alan.png`, más fondo tecnológico binario en `public/assets/img/hero-bg.jpg`. |
 | **4** | **Subir todo el proyecto al portal** | Listo | Estructura completa del proyecto Angular lista para compilar y empaquetar para el portal universitario. |
-| **Extra** | **Desplegar el proyecto en GitHub** | Configurado | Repositorio Git local inicializado, listo para sincronizar con GitHub y desplegar vía GitHub Pages. |
+| **Extra** | **Desplegar el proyecto en GitHub** | Completado | Repositorio activo y sincronizado en [https://github.com/dan121ka/portafolio-personal](https://github.com/dan121ka/portafolio-personal). |
 
 ---
 
 ## 3. Arquitectura y Tecnologías del Proyecto
 
 - **Framework:** Angular 22 (Standalone Components, Signals/Properties, Control Flow `@if` / `@for`)
-- **Estilos:** Bootstrap 5.3.3, Bootstrap Icons 1.11.3, CSS3 personalizado (`src/app/app.css` y `public/assets/css/main.css`)
+- **Estilos:** Bootstrap 5.3.3, Bootstrap Icons 1.11.3, CSS3 personalizado con **Temática Futurista Cyber Tech**:
+  - Paleta de color oscura espacial (`#070d19`, `#0d1627`).
+  - Acentos y resplandor neón cian / azul eléctrico (`#00e5ff`, `#00b4d8`).
+  - Efectos glassmorphism, sombras luminosas y bordes tecnológicos interactivos.
 - **Multimedia e Interactividad:**
-  - Efecto máquina de escribir reactivo en tiempo real (TypeScript puro).
+  - Efecto máquina de escribir reactivo en tiempo real (TypeScript puro) con inicialización fluida para garantizar textos completos desde el primer instante.
   - Filtrado dinámico de portafolio por categorías (`Todos`, `Web`, `Mobile/IoT`, `Redes`).
   - Ventana modal interactiva de detalles de proyectos con soporte para cierre por backdrop y teclado.
   - Formulario de contacto interactivo con control de estados (`idle`, `loading`, `success`, `error`).
   - Navegación suave (*smooth scrolling*) y detección de sección activa mediante `@HostListener('window:scroll')`.
 - **Estructura de Assets:**
-  - `public/assets/css/`: Hojas de estilo del template.
-  - `public/assets/img/`: Imágenes del portafolio e imagen de perfil personal del estudiante.
+  - `public/assets/css/`: Hojas de estilo del template adaptadas al tema futurista.
+  - `public/assets/img/`: Imágenes del portafolio, foto personal del estudiante y fondo cibernético.
   - `public/assets/vendor/`: Librerías de soporte (Bootstrap, Bootstrap Icons, AOS, GLightbox, Swiper).
 
 ---
@@ -42,13 +46,17 @@
 ## 4. Secciones Implementadas
 
 1. **Header / Sidebar (`#header`):**
-   - Fotografía personal de Alan Daniel Canaviri Conde con recorte circular proporcional.
+   - Fotografía personal de Alan Daniel Canaviri Conde con marco neón cian y recorte circular proporcional.
    - Nombre y enlaces a redes sociales (GitHub, LinkedIn, Instagram, Facebook, X).
-   - Menú de navegación interactivo con selector de secciones y responsive toggle para dispositivos móviles.
+   - Menú de navegación lateral interactivo con resaltado de sección activa.
 
 2. **Hero Banner (`#hero`):**
-   - Imagen de fondo panorámica de ingeniería.
-   - Título principal y animación de roles: *"Estudiante de Ingeniería de Sistemas"*, *"Desarrollador Web & Móvil"*, *"Entusiasta de IoT & Robótica"*, *"Especialista en Redes Cisco"*.
+   - Fondo tecnológico de matriz y código binario en azul cibernético.
+   - Título principal y animación de roles enriquecidos:
+     - *"Futuro Ingeniero de Sistemas"*
+     - *"Desarrollador Full Stack & Móvil"*
+     - *"Especialista en Redes Cisco & IoT"*
+     - *"Creador de Soluciones Tecnológicas"*
 
 3. **Sobre Mí (`#about`):**
    - Perfil profesional detallado de Alan Daniel Canaviri Conde.
@@ -58,7 +66,7 @@
    - Indicadores numéricos de proyectos de ingeniería, horas de laboratorio y tecnologías dominadas.
 
 5. **Habilidades (`#skills`):**
-   - Barras de progreso animadas para stacks tecnológicos: Angular/HTML/CSS, Flutter/Dart/BLE, Python/Flask/ML, ESP32/IoT, SQLite/Firebase, Redes Cisco.
+   - Barras de progreso con degradado cian neón para stacks: Angular/HTML/CSS, Flutter/Dart/BLE, Python/Flask/ML, ESP32/IoT, SQLite/Firebase, Redes Cisco.
 
 6. **Currículum (`#resume`):**
    - Resumen académico en UNIFRANZ.
@@ -71,11 +79,11 @@
    - Áreas de desarrollo fullstack, desarrollo móvil multiplataforma, Internet de las Cosas (IoT), biometría, telecomunicaciones y bases de datos cloud.
 
 9. **Testimonios (`#testimonials`):**
-   - Recomendaciones de docentes y colegas de proyectos de ingeniería de sistemas.
+   - Recomendaciones de docentes y colegas de proyectos de ingeniería de sistemas adaptadas a tarjetas tecnológicas.
 
 10. **Contacto (`#contact`):**
     - Tarjeta de información con ubicación (Cochabamba, Bolivia), teléfono, correo y mapa interactivo.
-    - Formulario reactivo de envío de mensajes.
+    - Formulario reactivo de envío de mensajes con inputs futuristas.
 
 11. **Footer (`#footer`):**
     - Derechos de autor atribuidos a Alan Daniel Canaviri Conde e identificación de la carrera.
@@ -116,19 +124,16 @@
 
 ---
 
-## 6. Instrucciones para Subir y Desplegar en GitHub
+## 6. Enlace a GitHub e Instrucciones para Entrega Docente
 
-### Opción A: Desde Visual Studio Code (Recomendada)
-Dado que Visual Studio Code ya está conectado a tu cuenta de GitHub:
-1. En la barra lateral izquierda de VS Code, abre la pestaña de **Control de Código Fuente (Source Control)** (`Ctrl + Shift + G`).
-2. Haz clic en el botón azul **"Publicar rama"** (o **"Publish to GitHub"**).
-3. Selecciona si deseas publicarlo como repositorio **Público** o **Privado**.
-4. ¡Listo! VS Code creará automáticamente el repositorio en tu cuenta de GitHub y subirá todos los archivos.
+### Enlace Oficial del Repositorio
+👉 **[https://github.com/dan121ka/portafolio-personal](https://github.com/dan121ka/portafolio-personal)**
 
-### Opción B: Mediante Línea de Comandos (Git)
-Si creas el repositorio vacío en [GitHub](https://github.com/new) con el nombre `portafolio-personal`:
-```bash
-git remote add origin https://github.com/TU_USUARIO_GITHUB/portafolio-personal.git
-git branch -M main
-git push -u origin main
-```
+> [!IMPORTANT]
+> **Aviso de Visibilidad para Calificación:**
+> Si tu repositorio se encuentra actualmente en modo **Privado** (*Private*), tu docente no podrá abrir el enlace a menos que lo cambies a **Público** (*Public*).
+> **Pasos para hacerlo Público en 20 segundos:**
+> 1. Ingresa a [https://github.com/dan121ka/portafolio-personal/settings](https://github.com/dan121ka/portafolio-personal/settings).
+> 2. Baja hasta el final de la página a la sección **"Danger Zone"**.
+> 3. En **"Change repository visibility"**, haz clic en **"Change visibility"** y selecciona **"Make public"**.
+> 4. Confirma el cambio y listo: tu docente podrá ver y evaluar todo el proyecto con el enlace directo.

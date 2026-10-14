@@ -36,15 +36,15 @@ export class App implements OnInit, OnDestroy {
 
   // Máquina de escribir (Typed)
   readonly roles: string[] = [
-    'Estudiante de Ingeniería de Sistemas',
-    'Desarrollador Web & Móvil',
-    'Entusiasta de IoT & Robótica',
-    'Especialista en Redes Cisco'
+    'Futuro Ingeniero de Sistemas',
+    'Desarrollador Full Stack & Móvil',
+    'Especialista en Redes Cisco & IoT',
+    'Creador de Soluciones Tecnológicas'
   ];
-  currentRole = '';
+  currentRole = 'Futuro Ingeniero de Sistemas';
   private roleIndex = 0;
-  private charIndex = 0;
-  private isDeleting = false;
+  private charIndex = 28;
+  private isDeleting = true;
   private typingTimeoutId: any = null;
 
   // Navegación y UI
@@ -175,7 +175,10 @@ export class App implements OnInit, OnDestroy {
   formStatus: 'idle' | 'loading' | 'success' | 'error' = 'idle';
 
   ngOnInit(): void {
-    this.startTypewriter();
+    this.currentRole = this.roles[0];
+    this.charIndex = this.roles[0].length;
+    this.isDeleting = true;
+    this.typingTimeoutId = setTimeout(() => this.startTypewriter(), 2500);
   }
 
   ngOnDestroy(): void {
@@ -195,15 +198,15 @@ export class App implements OnInit, OnDestroy {
       this.charIndex++;
     }
 
-    let delay = this.isDeleting ? 40 : 85;
+    let delay = this.isDeleting ? 30 : 65;
 
     if (!this.isDeleting && this.charIndex === fullText.length) {
-      delay = 2000;
+      delay = 2500;
       this.isDeleting = true;
     } else if (this.isDeleting && this.charIndex === 0) {
       this.isDeleting = false;
       this.roleIndex = (this.roleIndex + 1) % this.roles.length;
-      delay = 500;
+      delay = 450;
     }
 
     this.typingTimeoutId = setTimeout(() => this.startTypewriter(), delay);

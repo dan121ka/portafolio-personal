@@ -1,10 +1,15 @@
-/* Typewriter Cursor */
+/* ==============================================================
+   ESTILOS Y TEMÁTICA FUTURISTA CYBER TECH - PORTAFOLIO PERSONAL
+   ============================================================== */
+
+/* Typewriter Cursor con destello neón cian */
 .typed-cursor {
   opacity: 1;
   font-weight: 300;
   color: var(--accent-color);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 20px rgba(0, 229, 255, 0.5);
   animation: typedBlink 0.75s infinite;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 @keyframes typedBlink {
@@ -16,19 +21,91 @@
   }
 }
 
-/* Foto de perfil personal */
-.header .profile-img img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  object-position: center;
+/* Hero Section - Textos con brillo futurista */
+.hero h2 {
+  text-shadow: 0 0 30px rgba(0, 229, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.5px;
 }
 
+.hero p {
+  color: #e2e8f0;
+}
+
+.hero p span.typed {
+  color: var(--accent-color);
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 2px;
+}
+
+/* Sidebar / Header - Borde tecnológico y resplandor */
+.header {
+  border-right: 1px solid rgba(0, 229, 255, 0.18);
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.header .sitename {
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
+}
+
+.header .navmenu a:hover,
+.header .navmenu .active {
+  color: var(--accent-color) !important;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.header .navmenu a:hover i,
+.header .navmenu .active i {
+  color: var(--accent-color) !important;
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
+}
+
+/* Foto de perfil personal con marco neón */
+.header .profile-img img {
+  width: 124px;
+  height: 124px;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--accent-color) !important;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.45), inset 0 0 15px rgba(0, 229, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .profile-img img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 35px rgba(0, 229, 255, 0.7);
+}
+
+/* Redes sociales con resplandor neón */
+.header .social-links a {
+  background: rgba(0, 229, 255, 0.08);
+  color: #94a3b8;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.header .social-links a:hover {
+  color: #ffffff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Foto en sección Sobre Mí */
 .about .img-fluid {
   max-height: 480px;
   width: 100%;
   object-fit: cover;
   object-position: center 20%;
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 229, 255, 0.15) !important;
+}
+
+.about ul li i {
+  color: var(--accent-color);
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.6));
 }
 
 /* Visibilidad de elementos con data-aos */
@@ -38,9 +115,97 @@
   visibility: visible !important;
 }
 
-/* Habilidades - Barras de progreso */
+/* Títulos de sección con subrayado neón */
+.section-title h2 {
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  box-shadow: 0 0 12px var(--accent-color);
+  bottom: 0;
+  left: 0;
+}
+
+/* Estadísticas (Stats) - Tarjetas estilo cibernético */
+.stats .stats-item {
+  background: var(--surface-color);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.stats .stats-item:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 30px rgba(0, 229, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+.stats .stats-item i {
+  color: var(--accent-color);
+  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.6));
+}
+
+.stats .stats-item .purecounter {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+/* Habilidades - Barras de progreso con degradado cian */
+.skills .progress {
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.1);
+  overflow: hidden;
+}
+
 .skills .progress-bar {
+  background: linear-gradient(90deg, #0077b6 0%, #00e5ff 100%);
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.7);
   transition: width 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills .skill {
+  color: #e2e8f0;
+}
+
+.skills .skill .val {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
+
+/* Currículum - Línea de tiempo cibernética */
+.resume .resume-title {
+  color: var(--heading-color);
+}
+
+.resume .resume-item {
+  border-left: 2px solid rgba(0, 229, 255, 0.3);
+}
+
+.resume .resume-item::before {
+  background: var(--accent-color);
+  border: 2px solid #070d19;
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.resume .resume-item h5 {
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--accent-color);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
 }
 
 /* Filtros interactivos del portafolio */
@@ -48,28 +213,35 @@
   user-select: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 6px 16px;
+  padding: 7px 18px;
   border-radius: 20px;
-  background: color-mix(in srgb, var(--default-color), transparent 94%);
+  background: rgba(0, 229, 255, 0.06);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  color: #cbd5e1;
 }
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: #ffffff;
-  background-color: var(--accent-color);
+  color: #040812;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+  font-weight: 600;
 }
 
 .portfolio .portfolio-content {
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   background-color: var(--surface-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .portfolio .portfolio-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 35px rgba(0, 229, 255, 0.22);
 }
 
 .portfolio .portfolio-content img {
@@ -83,42 +255,190 @@
   transform: scale(1.08);
 }
 
+.portfolio .portfolio-info {
+  background: rgba(7, 13, 25, 0.92);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(0, 229, 255, 0.2);
+}
+
 .portfolio-badge {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
   color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: rgba(0, 229, 255, 0.12);
+  border: 1px solid rgba(0, 229, 255, 0.25);
   padding: 3px 10px;
   border-radius: 4px;
   margin-bottom: 8px;
+}
+
+/* Servicios & Especialidades */
+.services .service-item {
+  background: var(--surface-color);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.services .service-item:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.22);
+  transform: translateY(-5px);
+}
+
+.services .service-item .icon {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.services .service-item .icon i {
+  color: var(--accent-color);
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.6));
+}
+
+.services .service-item:hover .icon {
+  background: var(--accent-color);
+}
+
+.services .service-item:hover .icon i {
+  color: #040812;
+  filter: none;
+}
+
+/* Testimonios - Tarjetas oscuras tecnológicas */
+.testimonial-item {
+  background: var(--surface-color) !important;
+  color: var(--default-color) !important;
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+  border-color: rgba(0, 229, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2) !important;
+  transform: translateY(-4px);
+}
+
+.testimonial-item .quote-icon-left,
+.testimonial-item .quote-icon-right {
+  color: var(--accent-color) !important;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.5));
+}
+
+.testimonial-item .testimonial-img {
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+
+/* Contacto - Cajas y campos tecnológicos */
+.contact .info-wrap {
+  background-color: var(--surface-color);
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.contact .info-item i {
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--accent-color);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.4));
+  transition: all 0.3s ease;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: #040812;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.contact .php-email-form {
+  background-color: var(--surface-color);
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  background-color: rgba(7, 13, 25, 0.7) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(0, 229, 255, 0.22) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.35) !important;
+  outline: none;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #64748b !important;
+}
+
+.contact .php-email-form label {
+  color: #e2e8f0;
+}
+
+.php-email-form .btn-submit {
+  color: #040812;
+  background: linear-gradient(90deg, #00b4d8 0%, #00e5ff 100%);
+  border: 0;
+  padding: 13px 40px;
+  transition: 0.3s ease;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+.php-email-form .btn-submit:hover {
+  background: linear-gradient(90deg, #00e5ff 0%, #38ef7d 100%);
+  box-shadow: 0 0 28px rgba(0, 229, 255, 0.75);
+  transform: translateY(-2px);
 }
 
 /* Modal interactivo de detalles de proyectos */
 .project-modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(4, 8, 18, 0.88);
   z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   animation: fadeInModal 0.25s ease-out;
 }
 
 .project-modal-content {
-  background: var(--surface-color);
+  background: #0d1627;
   color: var(--default-color);
-  border-radius: 12px;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  border-radius: 14px;
   max-width: 760px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 229, 255, 0.2);
   animation: slideUpModal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-modal-content h3 {
+  color: #ffffff;
 }
 
 .project-modal-close {
@@ -128,13 +448,13 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.08);
-  border: none;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.25);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: #ffffff;
   cursor: pointer;
   transition: all 0.25s ease;
   z-index: 10;
@@ -142,7 +462,8 @@
 
 .project-modal-close:hover {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #040812;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
   transform: rotate(90deg);
 }
 
@@ -162,36 +483,37 @@
   }
 }
 
-/* Formulario de contacto */
-.php-email-form .btn-submit {
-  color: var(--contrast-color);
+/* Botón flotante para subir (Scroll Top) */
+.scroll-top {
+  background: rgba(7, 13, 25, 0.85);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.scroll-top i {
+  color: var(--accent-color);
+}
+
+.scroll-top:hover {
   background: var(--accent-color);
-  border: 0;
-  padding: 12px 35px;
-  transition: 0.3s;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 15px;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.7);
 }
 
-.php-email-form .btn-submit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.scroll-top:hover i {
+  color: #040812;
 }
 
-.php-email-form .loading {
-  display: block;
+/* Footer tecnológico */
+.footer {
+  border-top: 1px solid rgba(0, 229, 255, 0.15);
+  background: #040812 !important;
 }
 
-.php-email-form .sent-message {
-  display: block;
-}
-
-.php-email-form .error-message {
-  display: block;
+.footer .sitename {
+  color: var(--accent-color);
 }
 
 :host {
   display: block;
 }
-
